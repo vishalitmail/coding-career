@@ -1,13 +1,16 @@
 html{
-    height: 100%;
     font-family: 'Roboto', sans-serif;
-
 }
 body{
     background-image:linear-gradient(#FC5E55,#FA4083);
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     font-size: 1.125rem;
+    
+}
+a {
+    color: white;
+    text-decoration: none;
 }
 .container{
     width: 1024px;
@@ -16,8 +19,9 @@ body{
     margin-right: auto;
 }
 header{
-    
+   margin-bottom: 50px;
     min-height: 100px;
+    border-bottom: 1px solid lightgray;
 }
 main{
     min-height: 300px;
@@ -51,6 +55,11 @@ main{
     min-height: 250px;
     width: 30%;
 }
+.card1,.card2,.card3{
+    box-sizing: border-box;
+    padding: 30px 30px 20px 30px;
+    box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.373) ;
+}
 .herobox1{
     flex: 2;
 
@@ -65,24 +74,60 @@ header{
     align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
-
 }
 h1{
     font-size: 3.25rem;
     font-family: 'Playfair Display', serif;
     margin-bottom: 1rem;
+    text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.285) ;
 }
 h2{
     font-size: 2rem;
     font-family: 'Playfair Display', serif;
-    margin-top: 20px;
 }
 p{
     line-height: 1.75rem;
-    margin-bottom: 0.5rem;
 }
 .cards p{
     font-size: 0.85rem;
     line-height: 1.2rem;
-    margin: 10px 30px 20px 30px;
+    padding-top: 10px;  
+}
+.cards i {
+    font-size: 100px;
+}
+.mybutton {
+background-color: white;
+color:#FA4083;
+font-family: 'Playfair Display', serif;
+padding: 11px 25px;
+display: inline-block;
+margin-top: 20px;
+border-radius: 2px;
+box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.285) ;
+}
+nav a.mybutton{
+    margin-left: 30px;
+}
+.testimonials{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.tbox{
+    width: 47%;
+    padding: 50px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+.mybutton:hover{
+    background-color: rgb(93, 182, 93);
+    transition-duration: 0.5s;
+}
+
+.tbox p:last-of-type{
+    font-size: 0.8rem;
+    padding-left: 30px;
 }
