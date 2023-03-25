@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roar Cycle - Bike Repairs in Dublin</title>
+    <title>Roar Cycle - contact us details</title>
+    <meta name="discription" content="Contact details for Roar - 57 Moyglare Abbey,Dublin, w23c1k2. Phone +353 5465481">
     <!-- This is the Eric Meyers css reset -->
     <link rel="stylesheet" href="css-reset.css">
     <!-- This is my own css -->
@@ -36,26 +37,56 @@
 
                 </div>
 
-                <div class="navbutton"><a href="contact-us.html">Contact</a></div>
+                <div class="navbutton"><a href="#">Contact</a></div>
                 <div class="navbutton"><a href="#">About</a></div>
 
             </nav>
         </header>
-        <main>
-            <div class="herobox1">
-                <h1>Mobile bike repairs.</h1>
-                <p>Many people have difficulty getting their bikes to a bike shop. We call to your office or home
-                    anywhere in greater Dublin.
-                </p>
-                <p> Fast, convenient bike servicing with up-front pricing. All without the hassle of taking your bike
-                    into a shop.
-                </p>
-                <a href="text-page.html" class="mybutton">Book online</a>
-            </div>
-            <div class="herobox2">
-                <img src="images/image-bike-repair-service.jpg" alt="person servicing a bike in dublin">
-            </div>
-        </main>
+        <div class="main2">
+            <h1>Contact us</h1>
+            <p>Contact details for Roar - </p>
+            <p>57 Moyglare Abbey,Dublin, w23c1k2. </p>
+            <p>Phone +353 5465481</p>
+
+            <form action="mail.php" method="post">
+                <div class="inputwrapper">
+                    <label for="name" class="newline">First name</label>
+                    <input type="text" name="name" id="name" placeholder="First Name">
+                </div>
+                <div class="inputwrapper">
+                    <label for="email" class="newline">Your email</label>
+                    <input type="email" name="email" id="email" placeholder="your email">
+                </div>
+                <div class="inputwrapper">
+                    <textarea name="message" id="message" cols="100" rows="5" placeholder="Let us know what you think"></textarea>
+                </div>
+                <div class="inputwrapper">
+                    <label for="email-sub">Sign Up for Email Newsletter</label>
+
+                    <input type="checkbox" name="email-sub" id="email-sub" value="yes-sign-me-up" checked>
+                </div>
+                <div class="inputwrapper">
+                    <p>How would you like to be contacted?</p>
+                    
+                    <input type="radio" name="contact-pref" id="Phone" value="Phone" >
+                    <label for="Phone" class="margin-right-a">Phone</label>
+                    
+                    <input type="radio" name="contact-pref" id="Email" value="Email">
+                    <label for="Email">Email</label>
+                </div>
+                <div class="inputwrapper">
+
+                    <select name="country" id="country">
+                        <option value="Not Chosen">Choose Country</option>
+                        <option value="Limerick">Limerick</option>
+                        <option value="Galway">Galway</option>
+                        <option value="Denmark">Denmark</option>
+                    </select>
+
+                </div>
+                <input type="submit" value="Fire Away" class="mybutton">
+            </form>
+        </div>
         <div class="cards">
             <div class="card1">
                 <a href="#">
