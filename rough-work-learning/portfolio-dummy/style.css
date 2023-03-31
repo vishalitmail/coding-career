@@ -1,0 +1,15 @@
+/* Global view */
+.container{
+    background-color: rgb(112, 145, 77);
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+/* tablet view */
+@media(max-width: 786px){
+h1{color: brown;}
+}
+/* tablet view */
+@media(max-width: 400px){
+    h1{color: black;}
+}
