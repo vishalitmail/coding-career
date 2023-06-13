@@ -1,0 +1,140 @@
+/* Global view*/
+body{
+    font-family:'Asap', sans-serif;
+    color: white;
+    background-image: linear-gradient(rgb(255, 127, 80,1),rgb(255, 127, 80,0));
+    
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.container{
+    
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 140px;
+    
+}
+.header-container{
+    background-color: crimson;
+    min-height: 100px;
+    margin-bottom: 40px;
+    position: fixed;
+    width: 100%;
+
+    
+}
+.header{
+    background-color: crimson;
+    max-width: 1024px;
+    min-height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+.logo span{
+    font-weight: bold;
+}
+.col{
+    background-color: rgba(159, 48, 8, 0.348);
+    color: rgb(82, 25, 5);
+    width: 30%;
+    margin-bottom: 40px;
+    border-style:double;
+    border-width: 8px;
+    border-color: #521a0574;
+    
+    
+}
+.col p{
+    
+    font-size: .875rem;
+    padding: 20px 25px;
+}
+.hide-desktop-only{
+    display: none;
+}
+.col img{
+    width: 100%;
+    height: auto;
+}
+.col p::first-line{
+    font-weight: bold;
+   
+}
+.button{
+    padding: 10px 25px;
+    border-style: solid;
+    border-width: 1px;
+    margin-left: 20px;
+}
+.mob-wrapper{
+    display: none;
+}
+/* Tablet view*/
+@media (max-width: 768px){
+    .col{
+        width: 40%;
+    }
+    .hide-desktop-only{
+        display:block;
+    }
+    
+    .header-container{
+        position: relative;
+    }
+    .container{
+        padding-top: 40px;
+    }
+    nav{
+        display: none;
+    }
+    nav a{
+        display: block;
+    }
+    .logo{
+        padding: 40px 0;
+    }
+    .button{
+        margin-left: 0;
+    }
+    .mob-wrapper{
+        display: block;
+        padding-right: 40px;
+    }
+    .mob-nav{
+        display: none;
+        position:absolute;
+        padding-top: 24px;
+        
+    }
+    .navbutton{
+        display: block;
+        background-color: rgba(255, 127, 80, 0.853);
+        color: rgb(144, 45, 9);
+        padding: 15px 30px;
+        margin-left: -60px;
+        text-align: center;
+        border-style: solid;
+        border-width: 2px;
+        margin-bottom: 2px;
+        border-color: rgb(144, 45, 9);
+    }
+}
+/*mobile view*/
+@media (max-width: 425px){
+    .col{
+        width: 95%;
+    }
+    .hide-mobile-only{
+        display: none;
+    }
+}
