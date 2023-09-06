@@ -27,6 +27,12 @@ nav ul{
 nav ul li{
     padding: 0 12px;
 }
+nav ul li a{
+    padding: 0 12px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
 .brand img{
     width: 53px;
     padding: 0 8px;
@@ -39,7 +45,7 @@ nav ul li{
 }
 .container{
     min-height: 68vh;
-    background-color: black;
+    /* background-color: black; */
     color: white;
     font-family: 'Blinker', sans-serif;
     font-weight: bold;
@@ -48,7 +54,8 @@ nav ul li{
     width: 70%;
     border-radius: 16px;
     padding: 34px;
-    background-image: url('bg.jpg');
+    background-image: url('bg1.jpg');
+    background-size:cover;
 
 }
 .bottom{
@@ -73,12 +80,14 @@ nav ul li{
     cursor: pointer;
 }
 .songItemsContainer{
- margin-top: 74px;   
+ margin-top: 74px;  
+ overflow: scroll;
+ height: 500px; 
 }
 .songItem{
-height: 50px;
+height: 65px;
 display: flex;
-background-color: white;
+background-color:rgba(255, 255, 255, 0.755);
 
 color: black;
 margin: 12px 0;
@@ -106,3 +115,29 @@ border-radius: 34px;
     opacity: 0;
     transition: 0.4s ease-in;
 }
+
+
+
+@media only screen and (max-width: 450px) {
+    .container{
+        
+        background-image: url('bg2.jpg');
+        
+    
+    }
+    h1{
+        font-size: 20px;
+        color: rgb(246, 202, 146); 
+    }
+    h3{
+        background-color: rgba(0, 0, 0, 0.55);
+        color:white;
+    }
+    .songInfo{
+        margin-top: 110px;
+        margin-left: 40px;
+    }
+    .songInfo img{
+        margin-right: 20px;
+    }
+  }
