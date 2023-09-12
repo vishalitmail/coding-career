@@ -28,8 +28,8 @@ const checkWin = () => {
             document.querySelector('.info').innerText = boxTexts[e[0]].innerText + ' Won'
             isGameOver = true;
             document.querySelector('.imgBox').getElementsByTagName('img')[0].style.width = '25vh'
-            document.querySelector('.line').style.width = "20vw";
-            document.querySelector('.line').style.transform = `translate(${e[3]}vw, ${e[4]}vw) rotate(${e[5]}deg)`
+            // document.querySelector('.line').style.width = "20vw";
+            // document.querySelector('.line').style.transform = `translate(${e[3]}vw, ${e[4]}vw) rotate(${e[5]}deg)`
         }
     })
 };
