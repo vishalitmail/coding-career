@@ -1,0 +1,30 @@
+body {
+    border-style: solid;
+    border-color: black;
+    border-width: 20px;
+    margin: 0;
+
+
+}
+
+nav {
+    display: flex;
+    margin: 500px;
+}
+
+img {
+    width: 300px;
+    height: 320px;
+    border-radius: 50%;
+}
+
+.border {
+    background-color: blue;
+    width: 65%;
+    margin: 0px auto;
+}
+
+nav div:first-child {
+    background-color: aquamarine;
+    width: 33%;
+}
